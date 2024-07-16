@@ -33,6 +33,7 @@ if __name__ == "__main__":
                 file_size_total += file_size
             except Exception:
                 pass
+            # print metrics if 10 lines was read
             count += 1
             if count == 10:
                 print_metrics(file_size_total, codes_count)
