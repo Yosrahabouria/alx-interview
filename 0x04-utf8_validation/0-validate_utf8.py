@@ -3,6 +3,7 @@
 Validate utf-8
 """
 
+
 def validUTF8(data):
     count = 0
     first_bit = 1 << 7
