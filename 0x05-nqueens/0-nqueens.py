@@ -40,6 +40,7 @@ def nqueens(size):
 
     solve_nqueens(0, size, columns, pos_diags, neg_diags, board)
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: nqueens N")
