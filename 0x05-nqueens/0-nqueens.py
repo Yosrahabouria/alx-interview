@@ -31,6 +31,7 @@ def solve_nqueens(row, size, columns, pos_diags, neg_diags, board):
         neg_diags.remove(row - col)
         board[row][col] = 0
 
+
 def nqueens(size):
     columns = set()
     pos_diags = set()
