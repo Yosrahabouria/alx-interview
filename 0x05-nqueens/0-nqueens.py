@@ -4,6 +4,7 @@ Solution to the N queens problem
 """
 import sys
 
+
 def solve_nqueens(row, size, columns, pos_diags, neg_diags, board):
     if row == size:
         solution = []
