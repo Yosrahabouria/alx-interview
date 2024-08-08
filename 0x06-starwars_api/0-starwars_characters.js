@@ -11,8 +11,14 @@ const fetchFilmDetails = (filmId) => {
       console.error('Request failed:', err);
       return;
     }
+    
     const filmData = JSON.parse(body);
     const characterUrls = filmData.characters;
+
+    if (!characterUrls || !Array.isArray(characterUrls)) {
+      console.error('Error: No characters found in film data.');
+      return;
+    }
 
     characterUrls.forEach((url) => {
       request(url, (error, response, body) => {
