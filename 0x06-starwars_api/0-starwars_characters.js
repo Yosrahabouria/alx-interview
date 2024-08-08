@@ -18,5 +18,5 @@ request(url, async (err, response, body) => {
         resolve();
       });
     });
-  }
+  };
 });
