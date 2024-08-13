@@ -4,6 +4,7 @@ Solution to the N queens problem
 """
 import sys
 
+
 def solve_nqueens(row, size, columns, pos_diags, neg_diags, board):
     if row == size:
         solution = []
@@ -30,6 +31,7 @@ def solve_nqueens(row, size, columns, pos_diags, neg_diags, board):
         neg_diags.remove(row - col)
         board[row][col] = 0
 
+
 def nqueens(size):
     columns = set()
     pos_diags = set()
@@ -37,6 +39,7 @@ def nqueens(size):
     board = [[0] * size for _ in range(size)]
 
     solve_nqueens(0, size, columns, pos_diags, neg_diags, board)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
