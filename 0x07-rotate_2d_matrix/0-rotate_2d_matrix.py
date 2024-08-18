@@ -5,7 +5,6 @@
 def rotate_2d_matrix(matrix):
     """def Rotate 2D matrix 90 degrees clockwise"""
 
-
     size = len(matrix)
     for layer in range(size // 2):
         first = layer
